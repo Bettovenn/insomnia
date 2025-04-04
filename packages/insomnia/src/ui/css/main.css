@@ -1313,6 +1313,44 @@ html {
     'Ubuntu', 'Droid Sans', sans-serif;
   --font-ligatures: normal;
 }
+html {
+  /* Primary colors from your palette */
+  --color-success: #1e7d3e; /* Green */
+  --color-warning: #efa024; /* Orange */
+  --color-notice: #aec437;  /* Lime */
+  --color-info: #aec437;    /* Using lime for info as well */
+  --color-danger: #efa024;  /* Using orange for danger */
+  --color-surprise: #1e7d3e; /* Using green for surprise */
+
+  /* RGB versions of colors for opacity */
+  --color-success-rgb: 30, 125, 62;
+  --color-warning-rgb: 239, 160, 36;
+  --color-notice-rgb: 174, 196, 55;
+  --color-info-rgb: 174, 196, 55;
+  --color-danger-rgb: 239, 160, 36;
+  --color-surprise-rgb: 30, 125, 62;
+
+  /* Font colors on colored backgrounds - adjust for contrast */
+  --color-font-success: #ffffff;
+  --color-font-warning: #ffffff;
+  --color-font-notice: #000000;
+  --color-font-info: #000000;
+  --color-font-danger: #ffffff;
+  --color-font-surprise: #ffffff;
+
+  /* Highlight colors - gradients of the gray (assuming #636464) */
+  --hl-xxs: rgba(99, 100, 100, 0.05);
+  --hl-xs: rgba(99, 100, 100, 0.1);
+  --hl-sm: rgba(99, 100, 100, 0.2);
+  --hl-md: rgba(99, 100, 100, 0.3);
+  --hl-lg: rgba(99, 100, 100, 0.5);
+  --hl-xl: rgba(99, 100, 100, 0.8);
+  --hl: var(--hl-md);
+
+  /* Main background and font colors - using light/dark versions of the gray */
+  --color-bg: #ffffff;
+  --color-font: #333333;
+}
 /* Components */
 .editor {
   box-sizing: border-box;

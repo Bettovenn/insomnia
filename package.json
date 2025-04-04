@@ -67,6 +67,7 @@
   "dependencies": {
     "@getinsomnia/node-libcurl": "^2.33.4",
     "@types/decompress": "^4.2.7",
-    "decompress": "^4.2.1"
+    "decompress": "^4.2.1",
+    "insomnia-sdk": "^11.0.0-beta.6"
   }
 }

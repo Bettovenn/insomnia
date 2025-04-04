@@ -269,6 +269,7 @@ export interface BaseRequest {
   settingEncodeUrl: boolean;
   settingRebuildPath: boolean;
   settingFollowRedirects: 'global' | 'on' | 'off';
+  tags?: string[];
 }
 
 export type Request = BaseModel & BaseRequest;
@@ -310,6 +311,7 @@ export function init(): BaseRequest {
     settingEncodeUrl: true,
     settingRebuildPath: true,
     settingFollowRedirects: 'global',
+    tags: ['sin tag'],
   };
 }
 

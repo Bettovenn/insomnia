@@ -43,6 +43,8 @@ export const requestModelSchema: Schema<Request> = {
   ...baseModelSchema,
   ...toSchema(request.init()),
   type: () => request.type,
+  // Añadir tags aquí, después de las propiedades existentes
+  tags: () => ['Sin tag'], // Valor predeterminado como un array vacío
 };
 
 export const grpcRequestModelSchema: Schema<GrpcRequest> = {

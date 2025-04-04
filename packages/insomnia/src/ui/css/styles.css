@@ -57,16 +57,16 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 input[type="color"] {
-	-webkit-appearance: none;
-	border: none;
-	width: 12px;
-	height: 12px;
+  -webkit-appearance: none;
+  border: none;
+  width: 12px;
+  height: 12px;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
+  padding: 0;
 }
 input[type="color"]::-webkit-color-swatch {
-	border-radius: 9999px;
+  border-radius: 9999px;
   border: none;
 }
 
@@ -96,7 +96,7 @@ table.json-diff-viewer {
     padding: 1px 4px;
     font-size: 0;
   }
-  
+
   tr {
     vertical-align: top;
 
@@ -143,7 +143,7 @@ table.json-diff-viewer {
     white-space: pre-wrap;
     word-break: break-all;
   }
-} 
+}
 
 @keyframes bounceIn {
   0% {
@@ -163,4 +163,19 @@ table.json-diff-viewer {
 
 .monaco-editor .margin {
   margin: 0;
+}
+
+/* Custom Color Variables */
+:root {
+  --primary-green: #1e7d3e;
+  --primary-orange: #efa024;
+  --primary-lime: #aec437;
+  /* Assuming the last color is a gray, but needs confirmation */
+  --primary-gray: #636464;
+
+  /* Derived color variables with opacity */
+  --primary-green-rgb: 30, 125, 62;
+  --primary-orange-rgb: 239, 160, 36;
+  --primary-lime-rgb: 174, 196, 55;
+  --primary-gray-rgb: 99, 100, 100;
 }
